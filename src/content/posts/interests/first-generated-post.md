@@ -1,6 +1,6 @@
 ---
 # This md file was generated using the new-post.sh script at the root of the project.
-title: "first-generated-post"
+title: "First Generated Post"
 description: "Introduction Post for my post writing flow"
 garden : interests
 stage: seedling # seedling 🌱 | budding 🌿 | evergreen 🌳

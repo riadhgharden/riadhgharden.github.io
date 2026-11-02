@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ "$#" -lt 2 ]; then
 	echo "Usage : $0 <title> <type>"
 	exit 1
@@ -26,6 +25,7 @@ esac
 
 
 TITLE=$1
+TITLE_CLEANED="${TITLE//-/ }"
 TYPE=$2
 TEMPLATE_FILE="src/content/posts/_template.md"
 
@@ -37,7 +37,7 @@ generate_markdown()
 {
 	cp "$TEMPLATE_FILE" "$FILE"
 
-	sed -i "s|^title:.*|title: \"$TITLE\"|" "$FILE"
+	sed -i "s|^title:.*|title: \"$TITLE_CLEANED\"|" "$FILE"
 	sed -i "s|^garden:.*|garden : $TYPE|" "$FILE"
 	sed -i "s|^pubDatetime:.*|pubDatetime : $CURRENT_DATE|" "$FILE"
 	echo "Success : Created $FILE in $TYPE folder"
