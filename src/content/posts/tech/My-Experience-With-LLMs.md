@@ -12,7 +12,6 @@ tags:
   - LLM
   - AI
 featured: true
-draft: true
 ---
 
 I was a Student during the rise of LLMs and when ChatGPT 3.5 was a thing. However, what differentiated me from other students was the fact that I already had more than a year of working experience as a Game Developer. That experience gave me insights on the dangers that can entail from the over-reliance of this tool. I saw firsthand how people lost the ability of critical thinking, letting this tool prepare solutions for them that stem from its outdated training data that also contain peoples' past mistakes (depending on the context of course). 
